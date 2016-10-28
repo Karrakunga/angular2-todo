@@ -1,0 +1,9 @@
+    <div>
+    <input type="text" [(ngModel)]=newItem />
+    <input type="button" value="Add Item" (click)="addItem()">
+    </div>
+    <div>
+        <ul *ngFor="let item of todoItems">
+            <li>{{item}}</li>
+        </ul>        
+    </div>
